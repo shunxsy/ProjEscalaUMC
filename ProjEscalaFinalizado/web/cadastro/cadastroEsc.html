@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+     <title>Cadastro da Escala</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <style> 
+            .container{
+            background-color: rgb(128,128,128);
+        }  
+            .container-fluid{
+             background-color: rgb(128,128,128);
+        }
+      
+        </style>
+    <body>
+        
+        <!-- MENU DE PÁGINAS -->
+         <div class="container-fluid p-2">
+            <ul class="nav">
+            <li class="nav-item ">
+              <a class="nav-link disabled text-dark" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled text-dark" href="cadastroFun.html">Cadastro Funcionário</a>
+            </li>   
+            <li class="nav-item">
+              <a class="nav-link disabled text-dark" href="../Consultar/conLista.html">Relatório - ESCALA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled text-dark" href="../Consultar/consGeralFuncionario.html">Relatório - FUNCIONÁRIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled text-dark" href="../Consultar/consultaEscala.html">Consulta-ESCALA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled text-dark" href="../Consultar/consultaFuncionario.html">Consulta-FUNCIONÁRIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled text-dark" href="../alterar/alterarEscala.html">Alterar Escala</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled text-dark" href="../alterar/alterarFunc.html">Alterar Funcionário</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled text-dark" href="../Excluir/excluirFun.html">Excluir Funcionário</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled text-dark" href="../Excluir/excluirEscala.html">Excluir Escala</a>
+            </li>              
+         </div>        
+        <center><div class="p-3 m-2">Criar Escala</div></center>
+        
+        <form method="Post" action="CadEsc.jsp">
+        <div class="container p-3 w-25 text-center ">
+          
+          <!-- CADASTRO DADOS -->  
+          <label >Nome da Escala :</label>
+          <input class="form-control" type="text" name="nomeE" placeholder="Digite o nome">
+        
+           <label >Id Escala</label>
+          <input class="form-control" type="text" name="idEsc" placeholder="Digite o Id da Ecala">
+          
+          <label >DIA</label>
+          <input class="form-control" type="text" name="dia" placeholder="Digite o dia"> 
+          
+          <label >Semana</label>
+          <input class="form-control" type="text" name="semana" placeholder="Digite o dia da semana">
+          
+          <label >Nome do funcionario</label>
+          <input class="form-control" type="text" name="nomeF" placeholder="Digite o nome"> 
+          
+           <label >Id Funcionario</label>
+          <input class="form-control" type="text" name="idFun" placeholder="Digite a carga horaria"> 
+          
+           <label >Carga Horaria</label>
+          <input class="form-control" type="text" name="cargaH" placeholder="Digite a carga horaria">
+          
+          <br>
+          
+          <!-- BOTÃO SALVAR DADOS -->
+          <button type="submit" class="btn btn-secondary">Enviar</button>
+        </div>
+    </body>
+</html>
